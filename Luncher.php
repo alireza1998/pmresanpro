@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '244848409:AAELTYFhw7389YwaUS4LgznVfBOTBjzPELE');
+define('BOT_TOKEN', '234120557:AAFzEOX3MPQGseAbdYGmD4Lfon9JtpzC1sY');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -120,7 +120,7 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 46853604;
+    $admin = 159887854;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
@@ -156,7 +156,7 @@ $pmembersid= explode("\n",$txxt);
     }else if ($text == "Version") {
       apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>PvResan</b>
 <b>ver. 3.0</b>
-<code>Coded By</code> @arshiahp
+<code>Coded By</code> @CliApi
 Copy Right 2016©","parse_mode"=>"html"));
     }
     else if ($matches[0] == "/update"&& strpos($matches[1], ":")) {
@@ -219,7 +219,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=pvresanbot
+ https://telegram.me/storebot?start=Messengers_BOT
 .";
     
     $bot_url    = "https://api.telegram.org/bot244848409:AAELTYFhw7389YwaUS4LgznVfBOTBjzPELE/"; 
@@ -251,10 +251,9 @@ $output = curl_exec($ch);
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
 
 🔹هر نفر = یک ربات ✖️
-🔸ربات دوم = 5000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @arshiahp"));
+🚀 @CliApi"));
       }
     }
       
@@ -331,7 +330,7 @@ $output = curl_exec($ch);
 🔸ربات دوم = 5000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
-🚀 @arshiahp"));
+🚀 @CliApi"));
       }
 
     }
